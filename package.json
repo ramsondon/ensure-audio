@@ -1,0 +1,28 @@
+{
+  "name": "ensure-audio",
+  "version": "1.0.0",
+  "description": "a save audio context and user media stream factory",
+  "main": "index.js",
+  "scripts": {
+    "test": "node jasmine-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramsondon/ensure-audio.git"
+  },
+  "keywords": [
+    "audio",
+    "web",
+    "audio",
+    "api",
+    "audio",
+    "context",
+    "getUserMedia"
+  ],
+  "author": "Matthias Schmid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ramsondon/ensure-audio/issues"
+  },
+  "homepage": "https://github.com/ramsondon/ensure-audio#readme"
+}
