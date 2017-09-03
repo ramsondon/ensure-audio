@@ -105,7 +105,7 @@ var EnsureAudio = exports.EnsureAudio = function () {
 		}
 	}, {
 		key: 'getUserMedia',
-		value: function getUserMedia(constraints) {
+		value: function getUserMedia() {
 			if (!navigator.mediaDevices) {
 				// https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia
 				// Poly fill for other browsers
@@ -113,7 +113,7 @@ var EnsureAudio = exports.EnsureAudio = function () {
 					getUserMedia: function getUserMedia(constraints) {
 
 						// First get ahold of the legacy getUserMedia, if present
-						var getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.getUserMedia;
+						var getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
 						// Some browsers just don't implement it - return a rejected promise with an error
 						// to keep a consistent interface
@@ -129,7 +129,7 @@ var EnsureAudio = exports.EnsureAudio = function () {
 				};
 			}
 
-			return navigator.mediaDevices.getUserMedia(constraints);
+			return navigator.mediaDevices.getUserMedia({ audio: true });
 		}
 	}]);
 
