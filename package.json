@@ -2,7 +2,7 @@
   "name": "ensure-audio",
   "version": "1.0.0",
   "description": "a save audio context and user media stream factory",
-  "main": "index.js",
+  "main": "dist/js/index.js",
   "scripts": {
     "test": "node jasmine-node"
   },
@@ -24,5 +24,18 @@
   "bugs": {
     "url": "https://github.com/ramsondon/ensure-audio/issues"
   },
-  "homepage": "https://github.com/ramsondon/ensure-audio#readme"
+  "homepage": "https://github.com/ramsondon/ensure-audio#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-webpack-es6-pipeline": "^11.0.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "systemjs": "^0.20.17",
+    "webpack": "^3.5.5"
+  }
 }
