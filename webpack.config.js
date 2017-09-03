@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-	entry: './src/js/ensure-audio.js',
+	entry: './src/js/index.js',
 	output: {
 		path: path.join(__dirname, 'dist/js'),
 		filename: 'index.js'
