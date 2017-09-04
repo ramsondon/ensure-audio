@@ -23,7 +23,7 @@ audio.createAudioContext().then(
   err => console.error('audio context not available')
 );
 
-audio.getUserMedia({audio: true, video: true}).then(
+audio.getUserMedia().then(
   stream => console.log('stream', stream),
   err => console.log('usermedia not available'),
 );
