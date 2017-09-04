@@ -3,6 +3,8 @@ ensure-audio
 
 this class helps to ensure a cross browser AudioContext and navigator.mediaDevices.getUserMedia() stream function
 
+EnsureAudio is implemented in ES6 so you may need to use a transpiler or webpack.
+
 ```json
 {
 	"dependencies": {
