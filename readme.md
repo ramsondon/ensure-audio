@@ -3,8 +3,12 @@ ensure-audio
 
 this class helps to ensure a cross browser AudioContext and navigator.mediaDevices.getUserMedia() stream function
 
-```
-npm install ensure-audio
+```json
+{
+	"dependencies": {
+		"ensure-audio": "https://github.com/ramsondon/ensure-audio.git"
+	}
+}
 ```
 
 
